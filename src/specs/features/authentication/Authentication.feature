@@ -5,9 +5,7 @@ Feature: Authentification - OrangeHRM
   @connexion
   Scenario: Connexion sur OrangeHRM
     Given je me connecte sur l'application OrangeHRM
-    When je saisie username 
-    And je saisie le mot de passe
+    When je saisie username "Admin"
+    And je saisie le mot de passe "admin123"
     And je clique sur le bouton login 
-    Then je me redirige vers la page home
-
- 
+    Then je me redirige vers la page home "Welcome"
